@@ -37,7 +37,12 @@
         if (!helperButton) {
             var helperButton = document.createElement('div');
             helperButton.id = 'SimplyEditLogin';
-            helperButton.setAttribute('style', 'background-color: white; border-radius: 50%; width: 50px; height: 50px; box-shadow: 1px 1px 5px #888; position
+            helperButton.setAttribute(
+                'style', 
+                'background-color: white; border-radius: 50%; width: 50px; height: 50px;'+
+                'box-shadow: 1px 1px 5px #888; position: fixed; z-index: 999999; opacity: 0.5;'+
+                'cursor: pointer; padding: 13px 3px 0;'
+            ); 
             helperButton.title = 'Start SimplyEdit';   
             helperImage = document.createElement('img');
             helperImage.src = "https://cdn.simplyedit.io/1/muze/graphics/simply-edit-centered.svg";
