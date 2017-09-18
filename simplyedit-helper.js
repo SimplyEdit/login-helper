@@ -41,12 +41,16 @@
                 'style', 
                 'background-color: white; border-radius: 50%; width: 50px; height: 50px;'+
                 'box-shadow: 1px 1px 5px #888; position: fixed; z-index: 999999; opacity: 0.5;'+
-                'cursor: pointer; padding: 13px 3px 0;'
+                'cursor: pointer; padding: 6px;'
             ); 
             helperButton.title = 'Start SimplyEdit';   
             helperImage = document.createElement('img');
             helperImage.src = "https://cdn.simplyedit.io/1/muze/graphics/simply-edit-centered.svg";
-            helperImage.setAttribute('style','-webkit-touch-callout: none; touch-callout: none; touch-action: none;');
+            helperImage.setAttribute(
+                'style',
+                '-webkit-touch-callout: none; touch-callout: none; touch-action: none;'+
+                'margin-top: 15px;'
+            );
             helperButton.appendChild(helperImage);
             if ( helper.x<0 ) {
                 helperButton.style.right = -helper.x+'px';
