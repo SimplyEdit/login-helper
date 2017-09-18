@@ -39,7 +39,7 @@
             helperButton.id = 'SimplyEditLogin';
             helperButton.setAttribute(
                 'style', 
-                'background-color: white; border-radius: 50%; width: 50px; height: 50px;'+
+                'background-color: white; border-radius: 50%; width: 50px; height: 50px; box-sizing: border-box;'+
                 'box-shadow: 1px 1px 5px #888; position: fixed; z-index: 999999; opacity: 0.5;'+
                 'cursor: pointer; padding: 6px;'
             ); 
@@ -49,7 +49,7 @@
             helperImage.setAttribute(
                 'style',
                 '-webkit-touch-callout: none; touch-callout: none; touch-action: none;'+
-                'margin-top: 15px;'
+                'margin-top: 10px; position: absolute; margin-left: -4px; width: 46px;'
             );
             helperButton.appendChild(helperImage);
             if ( helper.x<0 ) {
